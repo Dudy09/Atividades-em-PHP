@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: min(100%, 440px);
+    background-color: #eef7f0;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(35, 35, 183, 0.18);
+    box-shadow: 0 18px 30px rgba(35, 35, 183, 0.08);
+}
+
+h1 {
+    color: #2323b7;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+input[type="text"], select {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 2px solid #2323b7;
+    background-color: #ffffff;
+    color: #2323b7;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #1a236e;
+    box-shadow: 0 0 0 5px rgba(35, 35, 183, 0.12);
+}
+
+.botao {
+    width: 100%;
+    max-width: 320px;
+    background-color: #2323b7;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 10px 20px rgba(35, 35, 183, 0.18);
+}
+
+.botao:hover {
+    background-color: #1c1b88;
+    transform: translateY(-1px);
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+}
+
+.botao[type="reset"] {
+    background-color: #f0ad4e;
+    color: #1f2a3a;
+    box-shadow: none;
+}
+
+.botao[type="reset"]:hover {
+    background-color: #d9961f;
+    transform: translateY(-1px);
+}
+
+.card {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 16px 20px;
+    background-color: #2323b7;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: left;
+    color: #1f2a3a;
+}

@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto    ;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: min(100%, 420px);
+    background-color: #eef7f0;
+    padding: 30px 30px 35px;
+    border-radius: 20px;
+    border: 1px solid rgba(32, 141, 69, 0.18);
+    box-shadow: 0 18px 30px rgba(32, 141, 69, 0.08);
+}
+
+h1 {
+    color: #2323b7;
+    margin-bottom: 25px;
+}
+
+.numeros-container {
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    min-height: 60px;
+}
+
+.bola {
+    width: 60px;
+    height: 60px;
+    background-color: #2323b7;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: surgir 0.3s ease-out;
+}
+
+input[name="numero"] {
+    width: 100%;
+    max-width: 260px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 2px solid #2323b7;
+    background-color: #ffffff;
+    color: #2323b7;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+}
+
+input[name="numero"]:focus {
+    border-color: #2323b7;
+    box-shadow: 0 0 0 5px rgba(32, 141, 69, 0.12);
+}
+
+.sortearNumeros {
+    background-color: #2323b7;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 10px 20px rgba(32, 141, 69, 0.18);
+}
+
+.sortearNumeros:hover {
+    background-color: #2323b7;
+    transform: translateY(-1px);
+}
+
+.espaço {
+    margin-top: 35px;
+}
+
+@keyframes surgir {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.card {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+}
+
+.titulo {
+    padding: 16px 20px;
+    background-color: #31455b;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.lista {
+    max-height: 260px;
+    overflow-y: auto;
+    padding: 18px 20px;
+    background-color: #f8fafc;
+    display: grid;
+    gap: 10px;
+}
+
+.musica {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 12px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    border: 1px solid rgba(49, 69, 91, 0.08);
+}
+
+.numero {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #2323b7;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.nome {
+    margin: 0;
+    font-size: 14px;
+    color: #1f2a3a;
+}
+
+.artista {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    color: #6b7a8d;
+}
+
+.lista_musica {
+    max-height: 1000px;
+    overflow-y: auto;
+    padding: 10px;
+}
