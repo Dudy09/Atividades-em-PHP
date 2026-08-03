@@ -1,0 +1,217 @@
+.botão_mais{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.botão_mais:hover{
+    background-color: #383838;
+    border-radius: 6px;
+}
+
+.card{
+    width:450px;
+    border:2px solid #ccc;
+    background-color: #FFFFFF;
+}
+
+.titulo{
+    padding:10px;
+    background-color:#3B506B;
+    font-weight:bold;
+}
+
+.lista{
+    max-height:220px;
+    overflow-y:auto;
+    padding:10px;
+}
+
+.lista_musica{
+    max-height:1000px;
+    overflow-y:auto;
+    padding:10px;
+}
+
+#especial{
+    background-color: transparent;
+    cursor: pointer;
+    font-weight:bold;
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+.teste{
+    background-color: transparent;
+    cursor: pointer;
+    font-weight:bold;
+    font-size: 23px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#teste2{
+    background-color: transparent;
+    cursor: pointer;
+    font-weight:bold;
+    font-size: 23px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#teste2:hover{
+    background-color: #383838;
+    border-radius: 6px;
+    width: 410px;
+}
+
+.teste:hover, #especial:hover{
+    background-color: #383838;
+    border-radius: 6px;
+    width: 350px;
+}
+
+.musica{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+    border-radius:8px;
+    background-color: #fff;
+}
+
+.musica:hover{
+    background:#f0f0f0;
+}
+
+.numero{
+    width:20px;
+    font-weight:bold;
+    color:#2a7abf;
+}
+
+.musica img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+.nome{
+    margin:0;
+    color:#2a7abf;
+}
+
+.artista{
+    font-size:12px;
+    color:gray;
+}
+
+.lista-musicas{
+    column-count: 2;
+    line-height:30px;
+}
+
+.letras{
+    border-radius: 16px;
+    background-color: #B2C000;
+    height: 30px;
+    width: 100px;
+}
+
+.cartão{
+    background-color: #ffffff; 
+    height: 235.2px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 16px;
+    
+}
+
+.cartão p{
+    margin-left: 20px;
+    color: black;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer div{
+    margin-bottom: 15px;
+}
+
+.footer label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.footer input{
+     width: 100%;
+     padding: 8px;
+     border: 1px solid #999;
+     border-radius: 5px;
+     box-sizing: border-box;
+}
+
+.footer textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.footer button{
+    background-color: #3B506B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer_main{
+    margin-left: 33%;
+}
+
+.sub_titulo{
+    font-size: 14px;
+    color: #000;
+}
+
+.discografia{
+    margin-top:40px;
+}
+
+.grid_discografia{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.album img{
+    width:100%;
+    border-radius:16px;
+}
+
+.album p{
+    margin-top:8px;
+    font-weight:bold;
+}
+
+.album span{
+    font-size:14px;
+    color:#ccc;
+}

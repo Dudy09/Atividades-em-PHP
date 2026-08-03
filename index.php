@@ -2,12 +2,17 @@
 
 if(!empty($_POST))
 {
-    echo $usuario = $_POST['usuario'];
-    echo $senha = $_POST['senha'];
+    $usuario = $_POST['usuario'];
+    $senha = $_POST['senha'];
 
     if(($usuario == 'Alessandro' && $senha == 'Alessandro') || (($usuario == 'RM' || $usuario == 'rm' || $usuario == 'Rm') && ($senha == '250533')))
     {
         header('location: menu.php');
+    }
+
+    else
+    {
+        echo "<script>alert('Usuário ou senha incorretos!');</script>";
     }
 }
 
@@ -86,10 +91,8 @@ if(!empty($_POST))
     </div>
 
 <script>
-// Get the modal
 var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
