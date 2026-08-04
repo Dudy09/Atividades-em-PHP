@@ -305,37 +305,81 @@
       <td class="col-main">
 
         <!-- CARD 1: CAIXA DE STRINGS -->
-        <div class="box-card">
-          <div class="tape-strip"></div>
-          <div class="box-header">
-            <h2 class="box-title">🧦 Caixa #1: Funções de String</h2>
-            <p class="box-subtitle">Ferramentas para organizar, cortar e formatar textos recebidos.</p>
-          </div>
+<!-- Comece aqui -->         
+<div class="box-card">
+  <div class="tape-strip"></div>
+  <div class="box-header">
+    <h2 class="box-title">🧦 Caixa #1: Funções de String</h2>
+    <p class="box-subtitle">Ferramentas para organizar, cortar e formatar textos recebidos.</p>
+  </div>
 
-          <div class="func-item">
-            <div style="display: table; width: 100%;">
-              <div style="display: table-cell;"><span class="func-name">addslashes($string)</span></div>
-              <div style="display: table-cell; text-align: right;"><span class="badge badge-string">String</span></div>
-            </div>
-            <p class="func-desc">Adiciona barras invertidas antes de caracteres especiais para evitar erros de escape.</p>
-            <div class="code-container">
-<span class="code-keyword">$texto</span> = <span class="code-str">"O'Reilly"</span>;
-<span class="code-keyword">echo</span> <span class="code-func">addslashes</span>(<span class="code-keyword">$texto</span>); <span class="code-comment">// Saída: O'Reilly</span>
-            </div>
-          </div>
+  <!-- ITEM 1 -->
+  <!-- Trocamos a div 'func-item' por 'details' -->
+  <details class="func-item">
+    <!-- O texto do summary fica sempre visível e serve de botão -->
+    <summary class="func-toggle">
+      NOME DA FUNÇÃO + BREVE DESCRIÇÃO
+    </summary>
+    
+    <!-- Todo o resto fica aqui dentro e só aparece ao clicar -->
+    <div class="func-content">
+      <div style="display: table; width: 100%;">
+        <div style="display: table-cell;"><span class="func-name">addslashes($string)</span></div>
+        <div style="display: table-cell; text-align: right;"><span class="badge badge-string">String</span></div>
+      </div>
+      <p class="func-desc">Adiciona barras invertidas antes de caracteres especiais para evitar erros de escape.</p>
+      <div class="code-container">
+        <span class="code-keyword">$texto</span> = <span class="code-str">"O'Reilly"</span>;
+        <span class="code-keyword">echo</span> <span class="code-func">addslashes</span>(<span class="code-keyword">$texto</span>); <span class="code-comment">// Saída: O\'Reilly</span>
+      </div>
+    </div>
+  </details>
 
-          <div class="func-item">
-            <div style="display: table; width: 100%;">
-              <div style="display: table-cell;"><span class="func-name">explode($delimiter, $string)</span></div>
-              <div style="display: table-cell; text-align: right;"><span class="badge badge-string">String</span></div>
-            </div>
-            <p class="func-desc">Quebra uma frase em várias partes dentro de um array, como tirar itens da caixa.</p>
-            <div class="code-container">
-<span class="code-keyword">$itens</span> = <span class="code-str">"livro,meia,foto"</span>;
-<span class="code-keyword">$caixa</span> = <span class="code-func">explode</span>(<span class="code-str">","</span>, <span class="code-keyword">$itens</span>);
-            </div>
-          </div>
-        </div>
+  <!-- ITEM 2 -->
+  <details class="func-item">
+    <summary class="func-toggle">
+      NOME DA SEGUNDA FUNÇÃO + BREVE DESCRIÇÃO
+    </summary>
+    
+    <div class="func-content">
+      <div style="display: table; width: 100%;">
+        <div style="display: table-cell;"><span class="func-name">explode($delimiter, $string)</span></div>
+        <div style="display: table-cell; text-align: right;"><span class="badge badge-string">String</span></div>
+      </div>
+      <p class="func-desc">Quebra uma frase em várias partes dentro de um array, como tirar itens da caixa.</p>
+      <div class="code-container">
+        <span class="code-keyword">$itens</span> = <span class="code-str">"livro,meia,foto"</span>;
+        <span class="code-keyword">$caixa</span> = <span class="code-func">explode</span>(<span class="code-str">","</span>, <span class="code-keyword">$itens</span>);
+      </div>
+    </div>
+  </details>
+</div>
+
+<style>
+/* Estiliza o texto clicável para parecer um parágrafo normal */
+.func-toggle {
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    padding: 5px 0;
+}
+
+/* Espaçamento interno opcional quando o conteúdo abrir */
+.func-content {
+    padding-top: 10px;
+}
+
+/* OPCIONAL: Remove a setinha preta padrão do navegador se você não quiser ela */
+/*
+.func-toggle {
+    list-style: none;
+}
+.func-toggle::-webkit-details-marker {
+    display: none;
+}
+*/
+</style>
+ <!-- termine aqui -->
 
         <!-- CARD 2: CAIXA DE ARRAYS -->
         <div class="box-card">
