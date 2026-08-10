@@ -1,163 +1,19 @@
-    <!doctype html>
-    <html lang="pt-br">
+<!doctype html>
+<html lang="pt-br">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Meu menu</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="style-musica.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style-musica.css">
+    <script src="reset-funcao.js" defer></script>
 
-        <style>
-            /* estilos.css */
+</head>
 
-/* Card Principal da Caixa */
-.box-card {
-  position: relative;
-  background-color: #FFFDF9;
-  border: 2px solid #E8DEC9;
-  border-bottom: 4px solid #C4B79B;
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(74, 62, 61, 0.06);
-}
-
-/* Fita Adesiva Decorativa */
-.tape-strip {
-  position: absolute;
-  top: -10px;
-  left: 40px;
-  width: 80px;
-  height: 18px;
-  background-color: rgba(230, 197, 148, 0.85);
-  border-left: 2px dashed rgba(158, 86, 50, 0.3);
-  border-right: 2px dashed rgba(158, 86, 50, 0.3);
-  transform: rotate(-1.5deg);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-}
-
-/* Cabeçalho da Caixa */
-.box-header {
-  margin-top: 4px;
-  margin-bottom: 12px;
-  border-bottom: 2px solid #F7F3ED;
-  padding-bottom: 8px;
-}
-
-.box-title {
-  margin: 0;
-  font-size: 12pt;
-  color: #9E5632;
-  font-weight: 700;
-}
-
-.box-subtitle {
-  margin: 2px 0 0 0;
-  font-size: 8.5pt;
-  color: #8C7B70;
-}
-
-/* Item de Função (Details) */
-.func-item {
-  background: #F7F3ED;
-  border: 1px solid #E8DEC9;
-  border-radius: 8px;
-  padding: 10px 12px;
-  margin-bottom: 10px;
-}
-
-/* Título Clicável */
-.func-toggle {
-  cursor: pointer;
-  font-weight: bold;
-  outline: none;
-  padding: 5px 0;
-}
-
-/* Conteúdo interno que expande */
-.func-content {
-  padding-top: 10px;
-}
-
-.func-table {
-  display: table;
-  width: 100%;
-}
-
-.func-cell-left {
-  display: table-cell;
-}
-
-.func-cell-right {
-  display: table-cell;
-  text-align: right;
-}
-
-.func-name {
-  font-family: 'Courier New', monospace;
-  font-weight: bold;
-  color: #9E5632;
-  font-size: 10pt;
-}
-
-.func-desc {
-  font-size: 8.5pt;
-  color: #4A3E3D;
-  margin: 3px 0 6px 0;
-}
-
-/* Badges / Etiquetas */
-.badge-string {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 10px;
-  font-size: 7.5pt;
-  font-weight: bold;
-  background-color: #E8B4B8;
-  color: #5C3236;
-}
-
-/* Container de Código */
-.code-container {
-  background-color: #2D2524;
-  color: #F7F3ED;
-  padding: 10px 12px;
-  border-radius: 6px;
-  font-family: 'Courier New', monospace;
-  font-size: 8.5pt;
-  margin-top: 6px;
-  white-space: pre;
-  overflow-x: auto;
-}
-
-/* Realce de Sintaxe do Código */
-.code-keyword {
-  color: #E8B4B8;
-  font-weight: bold;
-}
-
-.code-str {
-  color: #A3C9A8;
-}
-
-.code-func {
-  color: #E6C594;
-}
-
-.code-comment {
-  color: #8C7B70;
-}
-
-        </style>
-
-    </head>
-
-    <body>
-
-    
+<body>
 
         <header class="topo">
             <div class="navbar-top">
@@ -218,21 +74,45 @@
                                 <h2 class="box-title">Funções de String</h2>
                                 <p class="box-subtitle">Ferramentas para organizar, cortar e formatar textos recebidos.</p>
                             </div>
-
+                        <!-- contenteditable="true" deixa eu editar a caixa de texto -->
                             <!-- ITEM 1 -->
-                            <details class="func-item">
-                                <summary class="func-toggle"> ADDCSLASHES <p style="font-size: 0.8em;">Escapa string com barras invertidas no estilo C<p> </summary>
+                            <details class="func-item"> <!-- Consegue fazer o usuario recolher ou expandir esta parte -->
+                                <summary class="func-toggle"> ADDCSLASHES <p style="font-size: 0.8em;">Escapa string com barras invertidas no estilo C<p> </summary> <!-- Sempre vem com um summary que faz o titulo, tudo apartir daqui fica dentro da parte de expandir-->
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">addcslashes</span></div>
                                         <div class="func-cell-right"><span class="badge-string">String</span></div>
                                     </div>
                                     <p class="func-desc">Adiciona barras invertidas antes de caracteres especiais para evitar erros de escape.</p>
-                                    <div class="code-container">
-                                        <span class="code-keyword">$texto</span> = <span class="code-str">"O'Reilly"</span>;
-                                        <span class="code-keyword">echo</span> <span class="code-func">addcslashes</span>(<span class="code-keyword">$texto</span>, "'"); <span class="code-comment">// Saída: O\'Reilly</span>
+                                    <div class="code-container" contenteditable="false">
+                                        <span class="code-keyword">echo</span> <span class="code-func">addcslashes</span>(<span class="code-keyword">'foo[ ]'</span>, <span class="code-keyword">'A..z'</span>); <span class="code-comment">// Saída: O\'Reilly</span>
                                     </div>
                                 </div>
+                                <form method="post" id="form-addcslashes">
+                                    <input type="text" name="string" id="string" placeholder="Seu texto">
+                                    <input type="text" name="parametro1" id="parametro1" placeholder="A">
+                                    <input type="text" name="parametro2" id="parametro2" placeholder="z">
+                                    <button type="submit">Run Code</button>
+                                    <button type="button" data-reset-form="form-addcslashes" data-result-id="resultado-addcslashes">Reset</button>
+                                </form>
+
+                                <?php
+                                $resultado_exibido = '';
+                                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                                    $string = $_POST['string'] ?? '';
+                                    $parametro1 = $_POST['parametro1'] ?? '';
+                                    $parametro2 = $_POST['parametro2'] ?? '';
+
+                                    if ($string !== '' && $parametro1 !== '' && $parametro2 !== '') {
+                                        $resultado = addcslashes($string, $parametro1 . '..' . $parametro2);
+                                        $resultado_exibido = 'Resultado: ' . htmlspecialchars($resultado);
+                                    }
+                                }
+
+                                if ($resultado_exibido !== '') {
+                                    echo '<div id="resultado-addcslashes" style="margin-top: 12px; font-weight: 600;">' . $resultado_exibido . '</div>';
+                                }
+                                ?>
                             </details>
 
 
@@ -250,6 +130,72 @@
                                         <span class="code-keyword">echo</span> <span class="code-func">addslashes</span>(<span class="code-keyword">$texto</span>); <span class="code-comment">// Saída: O\'Reilly</span>
                                     </div>
                                 </div>
+                                <form method="post" id="form-addslashes">
+                                    <input type="text" name="texto" id="texto" placeholder="Digite o texto">
+                                    <button type="submit">Run Code</button>
+                                    <button type="button" data-reset-form="form-addslashes" data-result-id="resultado-addslashes">Reset</button>
+                                </form>
+
+                                <?php
+                                $resultado_addslashes = '';
+                                if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['texto'])) {
+                                    $texto = $_POST['texto'] ?? '';
+
+                                    if ($texto !== '') {
+                                        $resultado_addslashes = 'Resultado: ' . htmlspecialchars(addslashes($texto));
+                                    }
+                                }
+
+                                if ($resultado_addslashes !== '') {
+                                    echo '<div id="resultado-addslashes" style="margin-top: 12px; font-weight: 600;">' . $resultado_addslashes . '</div>';
+                                }
+                                ?>
+                            </details>
+
+                            <details class="func-item"> <!-- Consegue fazer o usuario recolher ou expandir esta parte -->
+                                <summary class="func-toggle"> bin2hex  <p style="font-size: 0.8em;">Converte um dado binário em representação hexadecimal<p> </summary> <!-- Sempre vem com um summary que faz o titulo, tudo apartir daqui fica dentro da parte de expandir-->
+                                <div class="func-content">
+                                    <div class="func-table">
+                                        <div class="func-cell-left"><span class="func-name">bin2hex</span></div>
+                                        <div class="func-cell-right"><span class="badge-string">String</span></div>
+                                    </div>
+                                    <p class="func-desc">Adiciona barras invertidas antes de caracteres especiais para evitar erros de escape.</p>
+                                    <div class="code-container" contenteditable="false">
+                                        <span class="code-keyword">echo</span> <span class="code-func">addcslashes</span>(<span class="code-keyword">'foo[ ]'</span>, <span class="code-keyword">'A..z'</span>); <span class="code-comment">// Saída: O\'Reilly</span>
+                                    </div>
+                                </div>
+                                <form method="post" id="form-bin2hex">
+                                    <input type="text" name="string" id="string" placeholder="Seu texto">
+                                    <button type="submit">Run Code</button>
+                                    <button type="button" data-reset-form="form-bin2hex" data-result-id="resultado-bin2hex">Reset</button>
+                                </form>
+
+                                <?php
+
+                                ?>
+                            </details>
+
+                            <details class="func-item"> <!-- Consegue fazer o usuario recolher ou expandir esta parte -->
+                                <summary class="func-toggle"> Nome função  <p style="font-size: 0.8em;">Descrição<p> </summary> <!-- Sempre vem com um summary que faz o titulo, tudo apartir daqui fica dentro da parte de expandir-->
+                                <div class="func-content">
+                                    <div class="func-table">
+                                        <div class="func-cell-left"><span class="func-name">Nome</span></div>
+                                        <div class="func-cell-right"><span class="badge-string">String</span></div>
+                                    </div>
+                                    <p class="func-desc">Descrição mais detalhada</p>
+                                    <div class="code-container" contenteditable="false">
+                                        <span class="code-keyword">A</span> <span class="code-func">A</span>(<span class="code-keyword">A</span>, <span class="code-keyword">A</span>); <span class="code-comment">A</span>
+                                    </div>
+                                </div>
+                                <form method="post" id="form-bin2hex">
+                                    <input type="text" name="string" id="string" placeholder="Seu texto">
+                                    <button type="submit">Run Code</button>
+                                    <button type="button" data-reset-form="form-bin2hex" data-result-id="resultado-bin2hex">Reset</button>
+                                </form>
+
+                                <?php
+
+                                ?>
                             </details>
 
                         </div>

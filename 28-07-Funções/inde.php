@@ -24,10 +24,10 @@
                 <nav class="navbar-menu">
                     <ul class="menu-items">
                         <li><a href="index.php" class="menu-link">Inicio</a></li>
-                        <li><a href="erro404.php" class="menu-link">sobre</a></li>
-                        <li><a href="erro404.php" class="menu-link">contatos</a></li>
+                        <li><a href="Sobre.php" class="menu-link">sobre</a></li>
+                        <li><a href="Contatos.php" class="menu-link">contatos</a></li>
                         <input type="button" value="Conta" id="Conta" class="Conta_Conta">
-                        <a class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0" href="erro404.php">Suporte</a>
+                        <a class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0" href="Suporte.php">Suporte</a>
                     </ul>
                 </nav> 
             </div>
@@ -36,11 +36,11 @@
         </div>
         <nav class="navbar-menu menu1">
             <ul class="menu-items">
-                <li><a href="erro404.php" class="menu-link">Guia</a></li>
-                <li><a href="erro404.php" class="menu-link">Post</a></li>
-                <li><a href="erro404.php" class="menu-link">Blog oficial</a></li>
-                <li><a href="erro404.php" class="menu-link">Post da comunidade</a></li>
-                <li><a href="erro404.php" class="menu-link">Blog da comunidade</a></li>
+                <li><a href="Guia.php" class="menu-link">Guia</a></li>
+                <li><a href="Post.php" class="menu-link">Post</a></li>
+                <li><a href="Blog-oficial.php" class="menu-link">Blog oficial</a></li>
+                <li><a href="Post-da-comunidade.php" class="menu-link">Post da comunidade</a></li>
+                <li><a href="Blog-da-comunidade.php" class="menu-link">Blog da comunidade</a></li>
             </ul>
         </nav>
     </header>
@@ -63,9 +63,9 @@
                         <h1><strong>Guia de php</strong></h1>
                         <ul>
                             <li><a href="index.php">Inicio</a></li>
-                            <li><a href="erro404.php">Introdução</a></li>
-                            <li><a href="erro404.php">Instalação</a></li>
-                            <li><a href="erro404.php">Variáveis</a></li>
+                            <li><a href="">Introdução</a></li>
+                            <li><a href="">Instalação</a></li>
+                            <li><a href="">Variáveis</a></li>
                             <li><a href="funcoes.php">Funções</a></li>
                             </ul>
                         <div style="margin: 0 auto; justify-content: center; display: flex;">

@@ -142,7 +142,6 @@ $numeros_repetidos = 0;
         </form>
     </article>
 
-
         <div class="numeros-container" id="resultado">
             <?php
                 if (!empty($_POST))
@@ -180,10 +179,6 @@ $numeros_repetidos = 0;
                     }
                 }
             ?>
-            
-            <form action="#" method="POST">
-
-            </form>
 
         </div>
     </div>
