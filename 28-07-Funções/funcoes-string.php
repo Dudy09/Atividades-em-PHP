@@ -55,8 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                     <nav class="navbar-menu">
                         <ul class="menu-items">
                             <li><a href="index.php" class="menu-link">Inicio</a></li>
-                            <li><a href="erro404.php" class="menu-link">sobre</a></li>
-                            <li><a href="erro404.php" class="menu-link">contatos</a></li>
+                            <li><a href="" class="menu-link">sobre</a></li>
+                            <li><a href="" class="menu-link">contatos</a></li>
                             <input type="button" value="Conta" id="Conta" class="Conta_Conta">
                             <a class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0" href="erro404.php">Suporte</a>
                         </ul>
@@ -67,11 +67,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
             </div>
             <nav class="navbar-menu menu1">
                 <ul class="menu-items">
-                    <li><a href="erro404.php" class="menu-link">Guia</a></li>
-                    <li><a href="erro404.php" class="menu-link">Post</a></li>
-                    <li><a href="erro404.php" class="menu-link">Blog oficial</a></li>
-                    <li><a href="erro404.php" class="menu-link">Post da comunidade</a></li>
-                    <li><a href="erro404.php" class="menu-link">Blog da comunidade</a></li>
+                    <li><a href="a" class="menu-link">Guia</a></li>
+                    <li><a href="" class="menu-link">Post</a></li>
+                    <li><a href="" class="menu-link">Blog oficial</a></li>
+                    <li><a href="" class="menu-link">Post da comunidade</a></li>
+                    <li><a href="" class="menu-link">Blog da comunidade</a></li>
                 </ul>
             </nav>
         </header>
@@ -180,75 +180,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                                 if ($resultado_addslashes !== '') {
                                     echo '<div id="resultado-addslashes" style="margin-top: 12px; font-weight: 600;">' . $resultado_addslashes . '</div>';
                                 }
-                                ?>
-                            </details>
-
-                            <details class="func-item"> <!-- Consegue fazer o usuario recolher ou expandir esta parte -->
-                                <summary class="func-toggle"> bin2hex  <p style="font-size: 0.8em;">Converte um dado binário em representação hexadecimal<p> </summary> <!-- Sempre vem com um summary que faz o titulo, tudo apartir daqui fica dentro da parte de expandir-->
-                                <div class="func-content">
-                                    <div class="func-table">
-                                        <div class="func-cell-left"><span class="func-name">bin2hex</span></div>
-                                        <div class="func-cell-right"><span class="badge-string">String</span></div>
-                                    </div>
-                                    <p class="func-desc">Adiciona barras invertidas antes de caracteres especiais para evitar erros de escape.</p>
-                                    <div class="code-container" contenteditable="false">
-                                        <span class="code-keyword">echo</span> <span class="code-func">addcslashes</span>(<span class="code-keyword">'foo[ ]'</span>, <span class="code-keyword">'A..z'</span>); <span class="code-comment">// Saída: O\'Reilly</span>
-                                    </div>
-                                </div>
-                                <form method="post" id="form-bin2hex">
-                                    <input type="text" name="string" id="string" placeholder="Seu texto">
-                                    <button type="submit">Run Code</button>
-                                    <button type="button" data-reset-form="form-bin2hex" data-result-id="resultado-bin2hex">Reset</button>
-                                </form>
-
-                                <?php
-                                    $str = substr($str, 0, -1); // is different than the Perl chop() function, which removes the last character in the string. 
-                                ?>
-                            </details>
-
-                            <details class="func-item"> <!-- Consegue fazer o usuario recolher ou expandir esta parte -->
-                                <summary class="func-toggle"> Nome função  <p style="font-size: 0.8em;">Descrição<p> </summary> <!-- Sempre vem com um summary que faz o titulo, tudo apartir daqui fica dentro da parte de expandir-->
-                                <div class="func-content">
-                                    <div class="func-table">
-                                        <div class="func-cell-left"><span class="func-name">Nome</span></div>
-                                        <div class="func-cell-right"><span class="badge-string">String</span></div>
-                                    </div>
-                                    <p class="func-desc">Descrição mais detalhada</p>
-                                    <div class="code-container" contenteditable="false">
-                                        <span class="code-keyword">A</span> <span class="code-func">A</span>(<span class="code-keyword">A</span>, <span class="code-keyword">A</span>); <span class="code-comment">A</span>
-                                    </div>
-                                </div>
-                                <form method="post" id="form-bin2hex">
-                                    <input type="text" name="string" id="string" placeholder="Seu texto">
-                                    <button type="submit">Run Code</button>
-                                    <button type="button" data-reset-form="form-bin2hex" data-result-id="resultado-bin2hex">Reset</button>
-                                </form>
-
-                                <?php
-
-                                ?>
-                            </details>
-
-                            <details class="func-item"> <!-- Consegue fazer o usuario recolher ou expandir esta parte -->
-                                <summary class="func-toggle"> Nome função  <p style="font-size: 0.8em;">Descrição<p> </summary> <!-- Sempre vem com um summary que faz o titulo, tudo apartir daqui fica dentro da parte de expandir-->
-                                <div class="func-content">
-                                    <div class="func-table">
-                                        <div class="func-cell-left"><span class="func-name">Nome</span></div>
-                                        <div class="func-cell-right"><span class="badge-string">String</span></div>
-                                    </div>
-                                    <p class="func-desc">Descrição mais detalhada</p>
-                                    <div class="code-container" contenteditable="false">
-                                        <span class="code-keyword">A</span> <span class="code-func">A</span>(<span class="code-keyword">A</span>, <span class="code-keyword">A</span>); <span class="code-comment">A</span>
-                                    </div>
-                                </div>
-                                <form method="post" id="form-bin2hex">
-                                    <input type="text" name="string" id="string" placeholder="Seu texto">
-                                    <button type="submit">Run Code</button>
-                                    <button type="button" data-reset-form="form-bin2hex" data-result-id="resultado-bin2hex">Reset</button>
-                                </form>
-
-                                <?php
-
                                 ?>
                             </details>
 
