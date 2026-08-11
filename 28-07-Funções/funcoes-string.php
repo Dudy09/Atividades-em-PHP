@@ -1,3 +1,34 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] ?? '') === 'XMLHttpRequest') {
+    $acao = $_POST['acao'] ?? '';
+    $resultId = $_POST['resultId'] ?? 'resultado-ajax';
+    $resultado = '';
+
+    if ($acao === 'addcslashes') {
+        $string = $_POST['string'] ?? '';
+        $parametro1 = $_POST['parametro1'] ?? '';
+        $parametro2 = $_POST['parametro2'] ?? '';
+
+        if ($string !== '' && $parametro1 !== '' && $parametro2 !== '') {
+            $resultado = addcslashes($string, $parametro1 . '..' . $parametro2);
+        }
+    } elseif ($acao === 'addslashes') {
+        $texto = $_POST['texto'] ?? '';
+
+        if ($texto !== '') {
+            $resultado = addslashes($texto);
+        }
+    }
+
+    if ($resultado !== '') {
+        echo '<div id="' . htmlspecialchars($resultId) . '" style="margin-top: 12px; font-weight: 600;">Resultado: ' . htmlspecialchars($resultado) . '</div>';
+    } else {
+        echo '<div id="' . htmlspecialchars($resultId) . '" style="margin-top: 12px; font-weight: 600;">Preencha os campos corretamente.</div>';
+    }
+
+    exit;
+}
+?>
 <!doctype html>
 <html lang="pt-br">
 
@@ -6,9 +37,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Meu menu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="style-musica.css">
     <script src="reset-funcao.js" defer></script>
 
 </head>
@@ -88,10 +117,11 @@
                                         <span class="code-keyword">echo</span> <span class="code-func">addcslashes</span>(<span class="code-keyword">'foo[ ]'</span>, <span class="code-keyword">'A..z'</span>); <span class="code-comment">// Saída: O\'Reilly</span>
                                     </div>
                                 </div>
-                                <form method="post" id="form-addcslashes">
-                                    <input type="text" name="string" id="string" placeholder="Seu texto">
-                                    <input type="text" name="parametro1" id="parametro1" placeholder="A">
-                                    <input type="text" name="parametro2" id="parametro2" placeholder="z">
+                                <form method="post" id="form-addcslashes" data-ajax="true" data-result-id="resultado-addcslashes">
+                                    <input type="hidden" name="acao" value="addcslashes">
+                                    <input type="text" name="string" id="string-addcslashes" placeholder="Seu texto">
+                                    <input type="text" name="parametro1" id="parametro1-addcslashes" placeholder="A">
+                                    <input type="text" name="parametro2" id="parametro2-addcslashes" placeholder="z">
                                     <button type="submit">Run Code</button>
                                     <button type="button" data-reset-form="form-addcslashes" data-result-id="resultado-addcslashes">Reset</button>
                                 </form>
@@ -130,8 +160,9 @@
                                         <span class="code-keyword">echo</span> <span class="code-func">addslashes</span>(<span class="code-keyword">$texto</span>); <span class="code-comment">// Saída: O\'Reilly</span>
                                     </div>
                                 </div>
-                                <form method="post" id="form-addslashes">
-                                    <input type="text" name="texto" id="texto" placeholder="Digite o texto">
+                                <form method="post" id="form-addslashes" data-ajax="true" data-result-id="resultado-addslashes">
+                                    <input type="hidden" name="acao" value="addslashes">
+                                    <input type="text" name="texto" id="texto-addslashes" placeholder="Digite o texto">
                                     <button type="submit">Run Code</button>
                                     <button type="button" data-reset-form="form-addslashes" data-result-id="resultado-addslashes">Reset</button>
                                 </form>
@@ -162,6 +193,29 @@
                                     <p class="func-desc">Adiciona barras invertidas antes de caracteres especiais para evitar erros de escape.</p>
                                     <div class="code-container" contenteditable="false">
                                         <span class="code-keyword">echo</span> <span class="code-func">addcslashes</span>(<span class="code-keyword">'foo[ ]'</span>, <span class="code-keyword">'A..z'</span>); <span class="code-comment">// Saída: O\'Reilly</span>
+                                    </div>
+                                </div>
+                                <form method="post" id="form-bin2hex">
+                                    <input type="text" name="string" id="string" placeholder="Seu texto">
+                                    <button type="submit">Run Code</button>
+                                    <button type="button" data-reset-form="form-bin2hex" data-result-id="resultado-bin2hex">Reset</button>
+                                </form>
+
+                                <?php
+                                    $str = substr($str, 0, -1); // is different than the Perl chop() function, which removes the last character in the string. 
+                                ?>
+                            </details>
+
+                            <details class="func-item"> <!-- Consegue fazer o usuario recolher ou expandir esta parte -->
+                                <summary class="func-toggle"> Nome função  <p style="font-size: 0.8em;">Descrição<p> </summary> <!-- Sempre vem com um summary que faz o titulo, tudo apartir daqui fica dentro da parte de expandir-->
+                                <div class="func-content">
+                                    <div class="func-table">
+                                        <div class="func-cell-left"><span class="func-name">Nome</span></div>
+                                        <div class="func-cell-right"><span class="badge-string">String</span></div>
+                                    </div>
+                                    <p class="func-desc">Descrição mais detalhada</p>
+                                    <div class="code-container" contenteditable="false">
+                                        <span class="code-keyword">A</span> <span class="code-func">A</span>(<span class="code-keyword">A</span>, <span class="code-keyword">A</span>); <span class="code-comment">A</span>
                                     </div>
                                 </div>
                                 <form method="post" id="form-bin2hex">
