@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Meu menu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -44,7 +44,7 @@
     </header>
 
     <main class="page-body" style="display: ; justify-content: center;">
-        <div class="layout-grid">
+        <div style="display: grid; gap: 28px; margin-top: 28px;">
             <article class="content-main">
                 <section class="main-card">
                             <div style="margin: 0 auto; justify-content: center; display: flex;">
