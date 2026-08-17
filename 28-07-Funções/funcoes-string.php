@@ -118,8 +118,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                     <nav class="navbar-menu">
                         <ul class="menu-items">
                             <li><a href="index.php" class="menu-link">Inicio</a></li>
-                            <li><a href="erro404.php" class="menu-link">sobre</a></li>
-                            <li><a href="erro404.php" class="menu-link">contatos</a></li>
+                            <li><a href="" class="menu-link">sobre</a></li>
+                            <li><a href="" class="menu-link">contatos</a></li>
                             <input type="button" value="Conta" id="Conta" class="Conta_Conta">
                             <a class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0" href="erro404.php">Suporte</a>
                         </ul>
@@ -130,11 +130,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
             </div>
             <nav class="navbar-menu menu1">
                 <ul class="menu-items">
-                    <li><a href="erro404.php" class="menu-link">Guia</a></li>
-                    <li><a href="erro404.php" class="menu-link">Post</a></li>
-                    <li><a href="erro404.php" class="menu-link">Blog oficial</a></li>
-                    <li><a href="erro404.php" class="menu-link">Post da comunidade</a></li>
-                    <li><a href="erro404.php" class="menu-link">Blog da comunidade</a></li>
+                    <li><a href="a" class="menu-link">Guia</a></li>
+                    <li><a href="" class="menu-link">Post</a></li>
+                    <li><a href="" class="menu-link">Blog oficial</a></li>
+                    <li><a href="" class="menu-link">Post da comunidade</a></li>
+                    <li><a href="" class="menu-link">Blog da comunidade</a></li>
                 </ul>
             </nav>
         </header>
