@@ -6,8 +6,8 @@ function executarFuncaoArray(string $acao, array $dados): string
     $mapaFuncoes = [
         'count' => fn() => (string) count(explode(',', $dados['array'] ?? '')),
         'array_merge' => fn() => implode(' | ', array_merge(explode(',', $dados['array1'] ?? ''), explode(',', $dados['array2'] ?? ''))),
-        'array_pop' => fn() => array_pop(explode(',', $dados['array'] ?? '')) ?? 'vazio',
-        'array_shift' => fn() => array_shift(($arr = explode(',', $dados['array'] ?? ''))) ?? 'vazio',
+        'array_pop' => function() use ($dados) { $arr = explode(',', $dados['array'] ?? ''); return array_pop($arr) ?? 'vazio'; },
+        'array_shift' => function() use ($dados) { $arr = explode(',', $dados['array'] ?? ''); return array_shift($arr) ?? 'vazio'; },
         'array_slice' => fn() => implode(' | ', array_slice(explode(',', $dados['array'] ?? ''), (int)($dados['inicio'] ?? 0), ($dados['tamanho'] ?? '') !== '' ? (int)$dados['tamanho'] : null)),
         'in_array' => fn() => in_array($dados['elemento'] ?? '', explode(',', $dados['array'] ?? '')) ? 'true' : 'false',
         'array_search' => fn() => (string) (array_search($dados['elemento'] ?? '', explode(',', $dados['array'] ?? '')) !== false ? array_search($dados['elemento'] ?? '', explode(',', $dados['array'] ?? '')) : 'não encontrado'),
@@ -1321,53 +1321,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
     </div>
 </details>
 
-                            <ul>
-                                <li>abs — Absolute value</li>
-                                <li>acos — Arc cosine</li>
-                                <li>acosh — Inverse hyperbolic cosine</li>
-                                <li>asin — Arc sine</li>
-                                <li>asinh — Inverse hyperbolic sine</li>
-                                <li>atan — Arc tangent</li>
-                                <li>atan2 — Arc tangent of two variables</li>
-                                <li>atanh — Inverse hyperbolic tangent</li>
-                                <li>base_convert — Convert a number between arbitrary bases</li>
-                                <li>bindec — Binary to decimal</li>
-                                <li>ceil — Round fractions up</li>
-                                <li>cos — Cosine</li>
-                                <li>cosh — Hyperbolic cosine</li>
-                                <li>decbin — Decimal to binary</li>
-                                <li>dechex — Decimal to hexadecimal</li>
-                                <li>decoct — Decimal to octal</li>
-                                <li>deg2rad — Converts the number in degrees to the radian equivalent</li>
-                                <li>exp — Calculates the exponent of e</li>
-                                <li>expm1 — Returns exp($num) - 1, computed in a way that is accurate even when the value of number is close to zero</li>
-                                <li>fdiv — Divides two numbers, according to IEEE 754</li>
-                                <li>floor — Round fractions down</li>
-                                <li>fmod — Returns the floating point remainder (modulo) of the division of the arguments</li>
-                                <li>fpow — Raise one number to the power of another, according to IEEE 754</li>
-                                <li>hexdec — Hexadecimal to decimal</li>
-                                <li>hypot — Calculate the length of the hypotenuse of a right-angle triangle</li>
-                                <li>intdiv — Integer division</li>
-                                <li>is_finite — Checks whether a float is finite</li>
-                                <li>is_infinite — Checks whether a float is infinite</li>
-                                <li>is_nan — Checks whether a float is NAN</li>
-                                <li>log — Natural logarithm</li>
-                                <li>log10 — Base-10 logarithm</li>
-                                <li>log1p — Returns log(1 + number), computed in a way that is accurate even when the value of number is close to zero</li>
-                                <li>max — Find highest value</li>
-                                <li>min — Find lowest value</li>
-                                <li>octdec — Octal to decimal</li>
-                                <li>pi — Get value of pi</li>
-                                <li>pow — Exponential expression</li>
-                                <li>rad2deg — Converts the radian number to the equivalent number in degrees</li>
-                                <li>round — Rounds a float</li>
-                                <li>sin — Sine</li>
-                                <li>sinh — Hyperbolic sine</li>
-                                <li>sqrt — Square root</li>
-                                <li>tan — Tangent</li>
-                                <li>tanh — Hyperbolic tangent</li>
-                            </ul>
-
                         </div>
 
                     </section>
@@ -1381,7 +1334,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                                 <ul>
                                     <li><a href="funcoes-string.php"><strong>Funções de string</strong></a></li>
                                     <li><a href="funcoes-array.php"><strong>Funções de array</strong></a></li>
-                                    <li><a href="funcoes-data.php"><strong>Funções de data</strong></a></li>
+                                    <li><a href="funcoes-math.php"><strong>Funções de math</strong></a></li>
                                 </ul>
                             <p><a href="sobre.php"><strong>Sobre</strong></a></p>
                             <p><a href="contato.php"><strong>Contato</strong></a></p>

@@ -1135,7 +1135,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                                 <ul>
                                     <li><a href="funcoes-string.php"><strong>Funções de string</strong></a></li>
                                     <li><a href="funcoes-array.php"><strong>Funções de array</strong></a></li>
-                                    <li><a href="funcoes-data.php"><strong>Funções de data</strong></a></li>
+                                    <li><a href="funcoes-math.php"><strong>Funções de math</strong></a></li>
                                 </ul>
                             <p><a href="sobre.php"><strong>Sobre</strong></a></p>
                             <p><a href="contato.php"><strong>Contato</strong></a></p>
