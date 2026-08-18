@@ -535,7 +535,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
 
                             <!-- ITEM 16 -->
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Verifica se a string contém uma substring.</p></summary>
+                                <summary class="func-toggle">str_contains<p style="font-size: 0.8em;">Verifica se a string contém uma substring.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">str_contains</span></div>
@@ -556,7 +556,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Verifica se a string começa com o valor informado.</p></summary>
+                                <summary class="func-toggle">str_starts_with<p style="font-size: 0.8em;">Verifica se a string começa com o valor informado.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">str_starts_with</span></div>
@@ -577,7 +577,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Verifica se a string termina com o valor informado.</p></summary>
+                                <summary class="func-toggle">str_ends_with<p style="font-size: 0.8em;">Verifica se a string termina com o valor informado.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">str_ends_with</span></div>
@@ -598,7 +598,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Preenche uma string até chegar ao tamanho desejado.</p></summary>
+                                <summary class="func-toggle">str_pad<p style="font-size: 0.8em;">Preenche uma string até chegar ao tamanho desejado.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">str_pad</span></div>
@@ -621,7 +621,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Conta quantas palavras existem em uma frase.</p></summary>
+                                <summary class="func-toggle">str_word_count<p style="font-size: 0.8em;">Conta quantas palavras existem em uma frase.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">str_word_count</span></div>
@@ -641,7 +641,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Remove tags HTML e PHP da string.</p></summary>
+                                <summary class="func-toggle">strip_tags<p style="font-size: 0.8em;">Remove tags HTML e PHP da string.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">strip_tags</span></div>
@@ -661,7 +661,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Coloca a primeira letra em minúscula.</p></summary>
+                                <summary class="func-toggle">lcfirst<p style="font-size: 0.8em;">Coloca a primeira letra em minúscula.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">lcfirst</span></div>
@@ -681,7 +681,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Calcula o hash MD5 da string.</p></summary>
+                                <summary class="func-toggle">md5<p style="font-size: 0.8em;">Calcula o hash MD5 da string.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">md5</span></div>
@@ -701,7 +701,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Calcula o hash SHA1 da string.</p></summary>
+                                <summary class="func-toggle">sha1<p style="font-size: 0.8em;">Calcula o hash SHA1 da string.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">sha1</span></div>
@@ -721,7 +721,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Embaralha os caracteres da string.</p></summary>
+                                <summary class="func-toggle">str_shuffle<p style="font-size: 0.8em;">Embaralha os caracteres da string.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">str_shuffle</span></div>
@@ -741,7 +741,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Divide a string em pedaços com tamanho definido.</p></summary>
+                                <summary class="func-toggle">implode<p style="font-size: 0.8em;">Divide a string em pedaços com tamanho definido.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">str_split</span></div>
@@ -762,7 +762,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Quebra a linha de um texto no tamanho informado.</p></summary>
+                                <summary class="func-toggle">wordwrap<p style="font-size: 0.8em;">Quebra a linha de um texto no tamanho informado.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">wordwrap</span></div>
@@ -787,7 +787,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Converte uma string em hexadecimal.</p></summary>
+                                <summary class="func-toggle">bin2hex<p style="font-size: 0.8em;">Converte uma string em hexadecimal.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">bin2hex</span></div>
@@ -807,7 +807,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Converte hexadecimal de volta para string.</p></summary>
+                                <summary class="func-toggle">hex2bin<p style="font-size: 0.8em;">Converte hexadecimal de volta para string.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">hex2bin</span></div>
@@ -827,7 +827,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Troca texto sem diferenciar maiúsculas e minúsculas.</p></summary>
+                                <summary class="func-toggle">str_ireplace<p style="font-size: 0.8em;">Troca texto sem diferenciar maiúsculas e minúsculas.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">str_ireplace</span></div>
@@ -849,7 +849,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Encontra a posição da substring ignorando maiúsculas.</p></summary>
+                                <summary class="func-toggle">stripos<p style="font-size: 0.8em;">Encontra a posição da substring ignorando maiúsculas.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">stripos</span></div>
@@ -870,7 +870,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Conta quantas vezes uma substring aparece.</p></summary>
+                                <summary class="func-toggle">substr_count<p style="font-size: 0.8em;">Conta quantas vezes uma substring aparece.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">substr_count</span></div>
@@ -891,7 +891,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Troca caracteres com base em um mapa de tradução.</p></summary>
+                                <summary class="func-toggle">strtr<p style="font-size: 0.8em;">Troca caracteres com base em um mapa de tradução.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">strtr</span></div>
@@ -913,7 +913,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Compara duas strings sem diferenciar maiúsculas e minúsculas.</p></summary>
+                                <summary class="func-toggle">strcasecmp<p style="font-size: 0.8em;">Compara duas strings sem diferenciar maiúsculas e minúsculas.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">strcasecmp</span></div>
@@ -934,7 +934,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Compara duas strings respeitando maiúsculas e minúsculas.</p></summary>
+                                <summary class="func-toggle">strcmp<p style="font-size: 0.8em;">Compara duas strings respeitando maiúsculas e minúsculas.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">strcmp</span></div>
@@ -955,7 +955,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Remove escapes de barras invertidas em strings escapadas.</p></summary>
+                                <summary class="func-toggle">stripcslashes<p style="font-size: 0.8em;">Remove escapes de barras invertidas em strings escapadas.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">stripcslashes</span></div>
@@ -975,7 +975,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Procura a primeira ocorrência sem diferenciar letras maiúsculas e minúsculas.</p></summary>
+                                <summary class="func-toggle">stristr<p style="font-size: 0.8em;">Procura a primeira ocorrência sem diferenciar letras maiúsculas e minúsculas.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">stristr</span></div>
@@ -996,7 +996,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Encontra a última ocorrência de uma substring.</p></summary>
+                                <summary class="func-toggle">strrpos<p style="font-size: 0.8em;">Encontra a última ocorrência de uma substring.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">strrpos</span></div>
@@ -1017,7 +1017,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Encontra a primeira ocorrência de uma substring.</p></summary>
+                                <summary class="func-toggle">strstr<p style="font-size: 0.8em;">Encontra a primeira ocorrência de uma substring.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">strstr</span></div>
@@ -1038,7 +1038,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Substitui texto dentro de uma parte específica da string.</p></summary>
+                                <summary class="func-toggle">substr_replace<p style="font-size: 0.8em;">Substitui texto dentro de uma parte específica da string.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">substr_replace</span></div>
@@ -1061,7 +1061,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_SERVER['HTTP_X_REQUESTED_WITH'] 
                             </details>
 
                             <details class="func-item">
-                                <summary class="func-toggle"><p style="font-size: 0.8em;">Compara duas strings a partir de uma posição.</p></summary>
+                                <summary class="func-toggle">substr_compare<p style="font-size: 0.8em;">Compara duas strings a partir de uma posição.</p></summary>
                                 <div class="func-content">
                                     <div class="func-table">
                                         <div class="func-cell-left"><span class="func-name">substr_compare</span></div>

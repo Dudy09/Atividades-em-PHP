@@ -87,16 +87,15 @@
             <aside class="sidebar">
                 <div class="sidebar-box">
                     <h2>Abas do nosso site:</h2>
-                        <p>Inicio</p>
-                        <p>Funções
+                        <p><a href="index.php"><strong>Inicio</strong></a></p>
+                        <p><a href="funcoes.php"><strong>Funções</strong></a></p>
                             <ul>
-                                <li>Funções de string</li>
-                                <li>Funções de array</li>
-                                <li>Funções de data</li>
+                                <li><a href="funcoes-string.php"><strong>Funções de string</strong></a></li>
+                                <li><a href="funcoes-array.php"><strong>Funções de array</strong></a></li>
+                                <li><a href="funcoes-math.php"><strong>Funções de math</strong></a></li>
                             </ul>
-                        </p>
-                        <p>Sobre</p>
-                        <p>Contato</p>
+                        <p><a href="sobre.php"><strong>Sobre</strong></a></p>
+                        <p><a href="contato.php"><strong>Contato</strong></a></p>
                 </div>
             </aside>
         </div>
