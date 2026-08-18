@@ -61,9 +61,9 @@
                         <h1><strong>Guia de php</strong></h1>
                         <ul>
                             <li><a href="index.php">Inicio</a></li>
-                            <li><a href="">Introdução</a></li>
-                            <li><a href="">Instalação</a></li>
-                            <li><a href="">Variáveis</a></li>
+                            <li><a href="introducao.php">Introdução</a></li>
+                            <li><a href="Instalação">Instalação</a></li>
+                            <li><a href="Variaveis.php">Variáveis</a></li>
                             <li><a href="funcoes.php">Funções</a></li>
                             </ul>
                         <div style="margin: 0 auto; justify-content: center; display: flex;">

@@ -83,7 +83,7 @@ if (!empty($_POST)) {
 
                 <div class="actions">
                     <button type="reset" class="botao">Limpar</button>
-                    <button type="submit" class="botao">Ver Nota</button>
+                    <button type="submit" class="botao">inserir senha</button>
                 </div>
             </form>
 
