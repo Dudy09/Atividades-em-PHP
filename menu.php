@@ -83,7 +83,7 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Atividades
+              Atividades de todos os bimestres
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="Música/index.php">Site de música</a></li>
@@ -94,16 +94,10 @@
               <li><a class="dropdown-item" href="Switch_case/Taxa_veiculo.php">Taxa de veiculo</a></li>
               <li><a class="dropdown-item" href="Switch_case/Analise_investimento.php">Analise de investimento</a></li>
               <li><a class="dropdown-item" href="Switch_case/Triagem_hospitalar.php">Triagem hospitalar</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Atividades 2 bimestre
-            </a>
-            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="27-04-Laços-de-repetição/tabuada.php">tabuada</a></li>
               <li><a class="dropdown-item" href="27-04-Laços-de-repetição/senha.php">senha</a></li>
               <li><a class="dropdown-item" href="27-04-Laços-de-repetição/mega_sena.php">mega sena</a></li>
+              <li><a class="dropdown-item" href="28-07-funções/index.php">Funções em php</a></li>
             </ul>
           </li>
         </ul>
