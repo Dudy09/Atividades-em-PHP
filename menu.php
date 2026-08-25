@@ -74,10 +74,10 @@
               Consulta
             </a>
             <ul class="dropdown-menu">
-              <!-- <li><a class="dropdown-item" href="Consulta/Cliente.php">Cliente</a></li>
+              <li><a class="dropdown-item" href="Consulta/Cliente_consulta.php">Cliente</a></li>
               <li><a class="dropdown-item" href="Consulta/Funcionario.php">Funcionario</a></li>
               <li><a class="dropdown-item" href="Consulta/Fornecedor.php">Fornecedor</a></li>
-              <li><a class="dropdown-item" href="Consulta/Produto.php">Produto</a></li> -->
+              <li><a class="dropdown-item" href="Consulta/Produto.php">Produto</a></li>
             </ul>
           </li>
 
